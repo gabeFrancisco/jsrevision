@@ -16,7 +16,23 @@ header {
   color: #ccc;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: 1.7rem;
+  border-bottom: 1px solid #eee;
+  padding: 0.7rem 0;
+}
+
+header .logo-area{
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .logo-area img{
+  margin: 0 1rem;
+  width: 2rem;
+  height: auto;
 }
 
 header ul {

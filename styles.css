@@ -44,3 +44,17 @@ header ul {
 header ul li {
   margin: 0 1rem;
 }
+
+header ul li a{
+  color: yellow;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  color: rgb(157, 157, 84);
+  text-decoration: underline
+}
+
+header ul li a:visited{
+  color: rgb(105, 105, 209)
+}

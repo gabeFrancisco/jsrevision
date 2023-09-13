@@ -7,10 +7,16 @@ html {
   font-family: 'Inconsolata', monospace;
 }
 
+h1, h2, h3, h4, h5, h6{
+  margin: 1rem
+}
+
 body {
   background-color: #020202;
   font-size: 16px;
 }
+
+/*HEADER=========================================*/
 
 header {
   color: #ccc;
@@ -58,3 +64,11 @@ header ul li a:hover{
 header ul li a:visited{
   color: rgb(105, 105, 209)
 }
+
+/* MAIN */
+
+main{
+  color: #ccc;
+  margin: 3rem 7rem;
+}
+

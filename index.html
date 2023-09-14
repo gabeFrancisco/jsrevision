@@ -2,17 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>JS Revision</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
-    <title>Document</title>
   </head>
   <body>
     <header>
@@ -42,7 +42,40 @@
           assim como qualquer página web. É o seu domínio que garantirá a você
           uma alta taxa de sobrivência onde frameworks não brilham...
         </p>
+        <hr />
+        <p>
+          O primeiro passo será criar uma variável e atribuir a ela o objeto
+          <code>document</code>.
+          Após, iremos selecionar o método <code>getElementById("#idDoObjeto").</code>
+          Agora a varíavel criada receberá uma referência ao elemento e poderemos manipula-la em todo o documento.
+          <br>
+          Os atributos que mais iremos usar no dia-a-dia são:
+          <ul id="attList">
+            <li><code>.innerHtml</code></li>
+            <li><code>.textContent</code></li>
+            <li><code>.innerText</code></li>
+            <li><code>.dataset</code></li>
+          </ul>
+          <br>
+          E os métodos serão:
+          <ul id="attList">
+            <li><code>.createElement()</code></li>
+            <li><code>.createTextNode()</code></li>
+            <li><code>.append()</code></li>
+            <li><code>.appendChild()</code></li>
+          </ul>
+        </p>
       </section>
+
+      <div>
+        <input id="dataValue" type="text" placeholder="Digita qualquer coisa!">
+        <button onclick="btnAlert()">Clique me!</button>
+      </div>
+      
+
+
     </main>
+    
+    <script src="./script.js"></script>
   </body>
 </html>

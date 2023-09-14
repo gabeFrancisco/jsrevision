@@ -7,24 +7,25 @@ html {
   font-family: 'Inconsolata', monospace;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   margin: 1rem
 }
 
-p{
+p {
   line-height: 1.5rem;
 }
 
 body {
-  background-color: #020202;
+  background-color  : #020202;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
-hr{
+hr {
   margin: 1rem 0.5rem;
 }
-  
-code{
+
+code {
   padding: 0.2rem 0.4rem;
   background-color: #111;
   border-radius: 7px;
@@ -35,23 +36,27 @@ code{
 /*HEADER=========================================*/
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #020202;
   color: #ccc;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 1.7rem;
+  margin: 1.7rem 0;
   border-bottom: 1px solid #eee;
-  padding: 0.7rem 0;
+  padding: 0.4em 0;
 }
 
-header .logo-area{
+header .logo-area {
   margin: 0 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-header .logo-area img{
+header .logo-area img {
   width: 2rem;
   height: auto;
   border-radius: 3px;
@@ -67,29 +72,28 @@ header ul li {
   margin: 0 1rem;
 }
 
-header ul li a{
+header ul li a {
   color: yellow;
   text-decoration: none;
 }
 
-header ul li a:hover{
+header ul li a:hover {
   color: #9d9d54;
   text-decoration: underline
 }
 
-header ul li a:visited{
+header ul li a:visited {
   color: #6969d1
 }
 
 /* MAIN */
 
-main{
+main {
   color: #ccc;
   margin: 3rem 7rem;
 }
 
-main ul{
+main ul {
   margin: 1rem 2rem;
   list-style: none;
 }
-

@@ -1,4 +1,4 @@
-const input = document.getElementsById("#dataValue")
-function btnAlert(){
-  alert(input.value)
+function btnAlert() {
+  const input = document.getElementById("dataValue").value
+  alert(input);
 }

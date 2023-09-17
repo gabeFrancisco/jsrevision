@@ -11,14 +11,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem
 }
 
-p {
-  line-height: 1.5rem;
-}
-
 body {
   background-color  : #020202;
   font-size: 16px;
   scroll-behavior: smooth;
+}
+
+p{
+  font-size: 13px;
+  line-height: 1.3rem;
 }
 
 hr {
@@ -102,6 +103,7 @@ main ul {
 /* TABELA */
 
 table{
+  margin: 1rem;
   padding: 1rem;
   border: 1px solid #2962ff;
   border-radius: 3px;

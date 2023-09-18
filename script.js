@@ -1,7 +1,7 @@
 let interval;
 let list = document.getElementById("someList");
 
-function btnAlert() {
+function msgAlert() {
   const input = document.getElementById("dataValue");
   alert(input.value);
   // input.style.padding = '2rem'
@@ -20,3 +20,33 @@ function worldClear() {
   clearInterval(interval);
   list.innerHTML = "";
 }
+
+let tableBody = document.getElementById("dataTable");
+
+let data = [
+  {
+    name: "Gabriel Francisco",
+    age: "24",
+  },
+  {
+    name: "Sara Limberger",
+    age: "20"
+  }
+]
+
+function loadData(){
+  data.map((el, index) => {
+    let row = document.createElement("tr");
+    let idH = document.createElement("th");
+    let nameD = document.createElement("td");
+    let ageD = document.createElement("td");
+    
+    idH.innerText = index
+    nameD.innerText = el.name
+    ageD.innerText = el.age
+
+    row.append(idH, nameD, ageD)
+    tableBody.appendChild(row);
+  })
+}
+

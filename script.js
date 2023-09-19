@@ -35,6 +35,7 @@ let data = [
 ]
 
 function loadData(){
+  tableBody.innerHTML = ""
   data.map((el, index) => {
     let row = document.createElement("tr");
     let idH = document.createElement("th");

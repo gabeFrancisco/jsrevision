@@ -18,7 +18,7 @@ body {
 }
 
 p{
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.3rem;
 }
 
@@ -113,4 +113,53 @@ th, td{
   border-left: 1px solid #2962ff;
   padding: 3px 7px;
 }
+
+button{
+  padding: 5px 0.7rem;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: #4f4f4f;
+  border-radius: 2px;
+}
+
+button:hover{
+  background-color: #373737;;
+}
+
+.btn-blue{
+  background-color: #183ed8;
+}
+
+.btn-blue:hover{
+  background-color: #0f2a98;
+}
+
+.btn-red{
+  background-color: #f50101;
+}
+
+.btn-red:hover{
+  background-color: #b00101;
+}
+
+.btn-green{
+  background-color: #009423;
+}
+
+.btn-green:hover{
+  background-color: #006a19;
+}
+
+.btn-yellow{
+  background-color: #99bf00;
+}
+
+.btn-yellow:hover{
+  background-color: #759300;
+}
+
+
+
 

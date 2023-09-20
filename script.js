@@ -35,7 +35,7 @@ let data = [
 ]
 
 function loadData(){
-  tableBody.innerHTML = ""
+  clearData()
   data.map((el, index) => {
     let row = document.createElement("tr");
     let idH = document.createElement("th");
@@ -49,5 +49,9 @@ function loadData(){
     row.append(idH, nameD, ageD)
     tableBody.appendChild(row);
   })
+}
+
+function clearData(){
+  tableBody.innerHTML = "";
 }
 

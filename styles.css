@@ -41,7 +41,7 @@ header {
   top: 0;
   z-index: 99;
   background-color: #020202;
-  color: #ccc;
+  color: #ddd;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,6 +99,23 @@ main ul {
   list-style: none;
 }
 
+/* SCROLL */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #292929;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ea3;
+}
 
 /* TABELA */
 
@@ -167,7 +184,8 @@ button:hover{
 input{
   background-color: #444;
   border: none;
-  padding: 3px 7px;
+  padding: 5px 7px;
+  color: #eee;
 }
 
 input::placeholder{
@@ -175,7 +193,7 @@ input::placeholder{
 }
 
 input:focus{
-  outline: 1px solid #b3f6f5b3;;
+  outline: 2px solid #b3f6f5b3;
 }
 
 /* MARGENS E PADDING */

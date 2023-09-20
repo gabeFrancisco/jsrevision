@@ -30,28 +30,45 @@ let data = [
   },
   {
     name: "Sara Limberger",
-    age: "20"
-  }
-]
+    age: "20",
+  },
+];
 
-function loadData(){
-  clearData()
+function loadData() {
+  clearData();
   data.map((el, index) => {
     let row = document.createElement("tr");
     let idH = document.createElement("th");
     let nameD = document.createElement("td");
     let ageD = document.createElement("td");
-    
-    idH.innerText = index
-    nameD.innerText = el.name
-    ageD.innerText = el.age
 
-    row.append(idH, nameD, ageD)
+    idH.innerText = index;
+    nameD.innerText = el.name;
+    ageD.innerText = el.age;
+
+    row.append(idH, nameD, ageD);
     tableBody.appendChild(row);
-  })
+  });
 }
 
-function clearData(){
+function clearData() {
   tableBody.innerHTML = "";
 }
 
+function addDatarow() {
+  let name = document.getElementById("name");
+  let age = document.getElementById("age");
+  let msg = document.getElementById("msg");
+
+  if (name.value === "" || age.value === "") {
+    msg.innerText = "Preencha os campos acima!";
+    throw new Error("Preencha os campos!");
+  }
+
+  data.push({ name: name.value, age: age.value });
+  name.setAttribute("value", "")
+  age.setAttribute("value", "")
+  msg.innerText = "";
+
+  loadData();
+}

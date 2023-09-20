@@ -67,7 +67,7 @@
         </p>
       </section>
 
-      <div>
+      <div class="my1">
         <input id="dataValue" type="text" placeholder="Digita qualquer coisa!">
         <button class="btn-green" onclick="msgAlert()">Clique me!</button>
         <button class="btn-yellow" onclick="worldClear()">Reset!</button>
@@ -94,7 +94,13 @@
             </tr> -->
           </tbody>
         </table>
-        <button class="btn-blue" onclick="loadData()">Carregar dados!</button>
+        <div class="my1">
+          <input id="name" type="text" placeholder="Nome">
+          <input id="age" type="text" placeholder="Idade">
+          <button class="btn-green" onclick="msgAlert()">+ Adicionar</button>
+          <ul id="someList"></ul>
+        </div>
+        <button class="btn-blue" onclick="loadData()">Carregar dados de exemploa!</button>
         <button class="btn-red" onclick="clearData()">Remover dados.</button>
       </div>
 

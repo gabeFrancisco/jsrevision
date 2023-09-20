@@ -114,6 +114,8 @@ th, td{
   padding: 3px 7px;
 }
 
+/* BOTÕES */
+
 button{
   padding: 5px 0.7rem;
   border: none;
@@ -159,6 +161,73 @@ button:hover{
 .btn-yellow:hover{
   background-color: #759300;
 }
+
+/* INPUTS */
+
+input{
+  background-color: #444;
+  border: none;
+  padding: 3px 7px;
+}
+
+input::placeholder{
+  color: #b3f6f5b3;
+}
+
+input:focus{
+  outline: 1px solid #b3f6f5b3;;
+}
+
+/* MARGENS E PADDING */
+
+.m1{
+  margin: 0.7rem;
+}
+
+.m2{
+  margin: 1.1rem;
+}
+
+.my1{
+  margin: 0.7rem 0;
+}
+
+.my2{
+  margin: 1.1rem 0;
+}
+
+.mx1{
+  margin: 0 0.7rem;
+}
+
+.mx2{
+  margin: 0 1.1rem;
+}
+
+.p1{
+  padding: 0.7rem;
+}
+
+.p2{
+  padding: 1.1rem;
+}
+
+.py1{
+  padding: 0.7rem 0;
+}
+
+.py2{
+  padding: 1.1rem 0;
+}
+
+.px1{
+  padding: 0 0.7rem;
+}
+
+.px2{
+  padding: 0 1.1rem;
+}
+
 
 
 

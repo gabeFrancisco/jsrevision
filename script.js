@@ -72,3 +72,8 @@ function addDatarow() {
 
   loadData();
 }
+
+//On load method
+document.addEventListener("DOMContentLoaded", () => {
+  alert("Started!")
+})
